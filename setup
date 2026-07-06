@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Study Wiki — instala as skills no Hermes
+exec "$(dirname "$0")/assistant/setup.sh"
