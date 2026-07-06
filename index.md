@@ -4,7 +4,10 @@ Catálogo de todas as páginas da wiki, organizadas por categoria.
 
 ## Concepts
 
-<!-- LLM: adicionar entradas conforme páginas de conceito forem criadas -->
+- [[arquitetura-de-software|Arquitetura de Software]] — Estrutura + características + decisões + princípios. As duas leis e o papel do contexto.
+- [[wiki/concepts/modularidade|Modularidade]] — Coesão, acoplamento, abstração/instabilidade e como medir se um sistema está bem modularizado.
+- [[conascencia|Conascência]] — A evolução do acoplamento: tipos estáticos e dinâmicos, Page-Jones, Weirich e como usar no dia a dia.
+- [[caracteristicas-arquiteturais|Características Arquiteturais]] — Os "-ilities": operacionais, estruturais e transversais. Trade-offs, implícitas vs. explícitas e a arquitetura "menos pior".
 
 ## Comparisons
 
@@ -20,4 +23,4 @@ Catálogo de todas as páginas da wiki, organizadas por categoria.
 
 ## Summaries
 
-<!-- LLM: adicionar entradas conforme páginas de síntese forem criadas -->
+- [[acompanhamento-competencias|Mapa de Estudos]] — Mapa de áreas de engenharia de software → páginas que cobrem cada área → temas a explorar.
