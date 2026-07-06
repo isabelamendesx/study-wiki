@@ -22,9 +22,10 @@ Ex: `/ingest fundamentos-eng-software cap-5`
 3. **enrich-visuals** — Adicionar diagramas Mermaid (paleta Minimalista TCC), tabelas, callouts.
 4. **map-competencies** — Mapear para áreas de engenharia de software.
 5. **update-graph** — Adicionar wikilinks (pipe syntax, mínimo 2).
-6. **update-index** — Atualizar `index.md`.
-7. **update-competency-map** — Atualizar `acompanhamento-competencias.md`.
-8. **update-log** — Registrar a ingestão em `log.md`.
+6. **update-book-index** — Atualizar `_index.md` do livro com progresso de leitura.
+7. **update-index** — Atualizar `index.md`.
+8. **update-competency-map** — Atualizar `acompanhamento-competencias.md`.
+9. **update-log** — Registrar a ingestão em `log.md`.
 
 ## Diretrizes de Estilo Didático
 
@@ -82,6 +83,7 @@ A página final deve incluir:
 - `assistant/strategies/enrich-visuals.md`
 - `assistant/strategies/map-competencies.md`
 - `assistant/strategies/update-graph.md`
+- `assistant/strategies/update-book-index.md`
 - `assistant/strategies/update-index.md`
 - `assistant/strategies/update-competency-map.md`
 - `assistant/strategies/update-log.md`

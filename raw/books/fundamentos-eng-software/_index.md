@@ -13,8 +13,8 @@
 - [x] Cap 1 e 2: Introdução e Pensamento Arquitetônico — lido em 2026-06-21, [[arquitetura-de-software|Arquitetura de Software]]
 - [x] Cap 3: Modularidade — lido em 2026-06-21, [[../../../wiki/concepts/modularidade|Modularidade]], [[conascencia|Conascência]]
 - [x] Cap 4: Definição das Características da Arquitetura — lido em 2026-07-01, [[../../../wiki/concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
-- [ ] Cap 5: Identificando as Caracteristicas da Arquitetura
-- [ ] Cap 6:
+- [x] Cap 5: Identificando Características Arquiteturais — lido em 2026-07-06, [[../../../wiki/concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- [ ] Cap 6: 
 - [ ] Cap 7:
 - [ ] Cap 8:
 - [ ] Cap 9:
