@@ -34,17 +34,17 @@ aliases:
 Mapa de áreas de engenharia de software que estou estudando → páginas da wiki
 que cobrem cada área → temas que ainda quero explorar.
 
-**Última atualização:** 2026-07-01 — ingestão do Cap 4 (Características Arquiteturais).
+**Última atualização:** 2026-07-06 — ingestão do Cap 5 (Identificação de Características Arquiteturais).
 
 ---
 
 ## Áreas com cobertura
 
 ### Architecture
-- **Páginas:** 4 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
+- **Páginas:** 5 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
 
 ### Technical Breadth
-- **Páginas:** 4 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
+- **Páginas:** 5 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
 
 ### Code Quality
 - **Páginas:** 3 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]]
@@ -63,24 +63,24 @@ que cobrem cada área → temas que ainda quero explorar.
 ## Temas a explorar (sem cobertura ainda)
 
 ### Product Acumen
-- **Páginas:** 0
-- **Próximos passos:** Tradução de necessidades em soluções técnicas, KPIs, data-driven decision making, balancear qualidade com velocidade.
+- **Páginas:** 1 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Próximos passos:** Aprofundar tradução de necessidades de negócio → requisitos técnicos com mais exemplos práticos.
 
 ### Data Driven
 - **Páginas:** 0
 - **Próximos passos:** Coleta de métricas, análise de padrões, monitoramento de features contra objetivos.
 
 ### Technical Communication
-- **Páginas:** 0
-- **Próximos passos:** Docs, diagramas, apresentações e discussões técnicas para diferentes públicos.
+- **Páginas:** 1 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Próximos passos:** Comunicação com stakeholders, docs, diagramas e discussões técnicas.
 
 ### Problem Decomposition
-- **Páginas:** 0
-- **Próximos passos:** Quebrar problemas complexos em partes gerenciáveis, priorização 80/20.
+- **Páginas:** 1 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Próximos passos:** Análise de trade-offs, priorização 80/20, decomposição de problemas complexos.
 
 ### Domain Knowledge
-- **Páginas:** 0
-- **Próximos passos:** Aprofundar no domínio do meu produto/contexto de trabalho.
+- **Páginas:** 1 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Próximos passos:** Aprofundar conhecimento implícito de domínio, padrões específicos de indústria.
 
 ### Technical Depth
 - **Páginas:** 0

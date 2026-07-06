@@ -8,6 +8,7 @@ Catálogo de todas as páginas da wiki, organizadas por categoria.
 - [[wiki/concepts/modularidade|Modularidade]] — Coesão, acoplamento, abstração/instabilidade e como medir se um sistema está bem modularizado.
 - [[conascencia|Conascência]] — A evolução do acoplamento: tipos estáticos e dinâmicos, Page-Jones, Weirich e como usar no dia a dia.
 - [[caracteristicas-arquiteturais|Características Arquiteturais]] — Os "-ilities": operacionais, estruturais e transversais. Trade-offs, implícitas vs. explícitas e a arquitetura "menos pior".
+- [[identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]] — Como identificar -ilities: preocupações de domínio, requisitos explícitos e conhecimento implícito. O anti-padrão Vasa e a análise de trade-offs.
 
 ## Comparisons
 

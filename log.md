@@ -58,7 +58,12 @@ trade-offs e least worst architecture). Cobriu `architecture`, `technical-breadt
 - SCHEMA.md atualizado: idioma na ingestão, estrutura `sources/`, convenção de attachments
 - `index.md`, `acompanhamento-competencias.md`, `_index.md`, `.manifest.json` atualizados
 
-## [2026-07-05] ingestão | Cap 5: Identifying Architectural Characteristics
+## [2026-07-06] ingestão | Cap 5: Identificação de Características Arquiteturais
 
-Fonte preparada via `/prepare` com EPUB + pandoc. Template `5 - Identificando Caracteristicas Arquiteturais.md`
-criado com TL;DR e Resumo automáticos. Aguardando completar com insights para `/ingest`.
+Livro: Fundamentos de Engenharia de Software. Criada página [[identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+(três fontes de identificação: preocupações de domínio, requisitos explícitos, conhecimento implícito;
+anti-padrão Vasa; Silicon Sandwiches kata; análise de trade-offs na identificação).
+Complementa a página de [[caracteristicas-arquiteturais|Características Arquiteturais]] (Cap 4) — que cobre *o que são* — com *como descobri-las*.
+Primeira página a cobrir `product-acumen`, `domain-knowledge`, `technical-communication` e `problem-decomposition`.
+4 áreas saíram de "sem cobertura" no mapa de competências.
+
