@@ -58,19 +58,6 @@ trade-offs e least worst architecture). Cobriu `architecture`, `technical-breadt
 - SCHEMA.md atualizado: idioma na ingestão, estrutura `sources/`, convenção de attachments
 - `index.md`, `acompanhamento-competencias.md`, `_index.md`, `.manifest.json` atualizados
 
-## [2026-07-05] refatoração | Arquitetura Commands + Strategies + Wiki
-
-Refatoração completa da wiki: de SCHEMA.md monolítico para arquitetura modular.
-
-- **`assistant/`** — criado com 21 estratégias, 7 adapters Hermes, 5 convenções, 3 arquivos de domínio, 5 templates
-- **`SCHEMA.md`** — decomposto e removido
-- **`.manifest.json`** e **`llm-wiki-skills/`** — removidos
-- **`/prepare`** — novo comando que extrai capítulos de EPUB via pandoc e preenche TL;DR + Resumo
-- **Skills Hermes** — `wiki-ingest`, `wiki-prepare`, `wiki-ask`, `wiki-assess`, `wiki-lint`, `wiki-crystallize`, `wiki-progress`
-- **Setup** — `./setup` instala skills globalmente
-- **EPUB workflow** — livros agora em `sources/livro.epub` (não PDF)
-- **GitHub** — repo público `isabelamendesx/study-wiki` (main = estrutura, isabela = conteúdo pessoal)
-
 ## [2026-07-05] ingestão | Cap 5: Identifying Architectural Characteristics
 
 Fonte preparada via `/prepare` com EPUB + pandoc. Template `5 - Identificando Caracteristicas Arquiteturais.md`
