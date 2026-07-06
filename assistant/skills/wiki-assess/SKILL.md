@@ -1,19 +1,19 @@
 ---
 name: wiki-assess
 description: "Gera perguntas de autoavaliação sobre conceitos da Study Wiki e avalia as respostas do usuário, atualizando o nível de entendimento."
-disable-model-invocation: true
 metadata:
-  wiki_path: /Users/isabelam/Downloads/study-wiki
+  wiki_path: /Users/isabela.gomes/SandBoxes/study-wiki
 ---
-# /wiki-assess — Autoavaliação
+
+# /assess — Autoavaliação
 
 Gera perguntas de verificação sobre um conceito ou fonte, avalia as respostas do usuário e atualiza o campo `understanding`.
 
 ## Entrada
 
-`/wiki-assess <página-ou-conceito>`
+`/assess <página-ou-conceito>`
 
-Ex: `/wiki-assess arquitetura-de-software`
+Ex: `/assess arquitetura-de-software`
 
 ## Fluxo
 

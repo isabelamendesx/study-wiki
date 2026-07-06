@@ -1,18 +1,17 @@
 ---
 name: wiki-crystallize
 description: "Destila uma sessão de estudo em aprendizado consolidado e salva na Study Wiki, extraindo insights, decisões e conexões."
-disable-model-invocation: true
 metadata:
-  wiki_path: /Users/isabelam/Downloads/study-wiki
+  wiki_path: /Users/isabela.gomes/SandBoxes/study-wiki
 ---
 
-# /wiki-crystallize — Destilar Sessão
+# /crystallize — Destilar Sessão
 
 Extrai insights, decisões e conexões de uma sessão de estudo e os preserva na wiki.
 
 ## Entrada
 
-`/wiki-crystallize` ou `/wiki-crystallize <descrição da sessão>`
+`/crystallize` ou `/crystallize <descrição da sessão>`
 
 Usável de qualquer contexto — após resolver um problema, aprender algo novo, ou discutir um tema.
 

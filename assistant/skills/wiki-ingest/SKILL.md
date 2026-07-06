@@ -1,20 +1,19 @@
 ---
 name: wiki-ingest
-description: "Ingere uma fonte de estudo (capítulo de livro, artigo) e cria páginas na Study Wiki, discutindo com o usuário antes de sintetizar."
-disable-model-invocation: true
+description: Ingere uma fonte de estudo (capítulo de livro, artigo) e cria páginas na Study Wiki, discutindo com o usuário antes de sintetizar.
 metadata:
-  wiki_path: /Users/isabelam/Downloads/study-wiki
+  wiki_path: /Users/isabela.gomes/SandBoxes/study-wiki
 ---
 
-# /wiki-ingest — Ingestão de Fonte
+# /ingest — Ingestão de Fonte
 
 Lê uma fonte e a transforma em página(s) na wiki, discutindo os pontos principais com o usuário primeiro.
 
 ## Entrada
 
-`/wiki-ingest <caminho-da-fonte>` ou `/wiki-ingest <livro> <capítulo>`
+`/ingest <caminho-da-fonte>` ou `/ingest <livro> <capítulo>`
 
-Ex: `/wiki-ingest fundamentos-eng-software cap-5`
+Ex: `/ingest fundamentos-eng-software cap-5`
 
 ## Fluxo
 
@@ -29,7 +28,7 @@ Ex: `/wiki-ingest fundamentos-eng-software cap-5`
 
 ## Diretrizes de Estilo Didático
 
-As páginas da wiki devem ser **didáticas e visualmente ricas**, seguindo o mesmo estilo do `/wiki-prepare`. O usuário aprende melhor com explicações narrativas, exemplos concretos e elementos visuais.
+As páginas da wiki devem ser **didáticas e visualmente ricas**, seguindo o mesmo estilo do `/prepare`. O usuário aprende melhor com explicações narrativas, exemplos concretos e elementos visuais.
 
 ### Fase 1: discuss-source (diálogo)
 

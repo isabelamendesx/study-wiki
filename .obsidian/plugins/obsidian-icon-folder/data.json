@@ -48,5 +48,11 @@
   },
   "assistant/templates/summary.md": {
     "iconName": "📝"
+  },
+  "wiki/summaries/acompanhamento-competencias.md": {
+    "iconName": "🗺️"
+  },
+  "wiki/concepts/identificacao-caracteristicas-arquiteturais.md": {
+    "iconName": "📘"
   }
 }

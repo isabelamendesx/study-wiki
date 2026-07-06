@@ -1,21 +1,20 @@
 ---
 name: wiki-lint
 description: "Executa verificação de saúde na Study Wiki: frontmatter, wikilinks, órfãs, contradições, obsolescência e gaps de competência."
-disable-model-invocation: true
 metadata:
-  wiki_path: /Users/isabelam/Downloads/study-wiki
+  wiki_path: /Users/isabela.gomes/SandBoxes/study-wiki
 ---
 
-# /wiki-lint — Verificação de Saúde
+# /lint — Verificação de Saúde
 
 Executa verificações de saúde na wiki com subcomandos opcionais.
 
 ## Entrada
 
-`/wiki-lint` — verificação completa  
-`/wiki-lint frontmatter` — apenas validação de frontmatter  
-`/wiki-lint wikilinks` — links quebrados e pipe syntax  
-`/wiki-lint gaps` — apenas gaps de competência
+`/lint` — verificação completa  
+`/lint frontmatter` — apenas validação de frontmatter  
+`/lint wikilinks` — links quebrados e pipe syntax  
+`/lint gaps` — apenas gaps de competência
 
 ## Fluxo (completo)
 
