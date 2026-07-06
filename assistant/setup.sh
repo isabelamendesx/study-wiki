@@ -11,6 +11,14 @@ echo "   Wiki: ${WIKI_ROOT}"
 echo "   Skills: ${HERMES_SKILLS_DIR}"
 echo ""
 
+# Atualizar wiki_path nos metadados das skills para refletir o path real
+echo "Atualizando wiki_path nos adapters..."
+for adapter in "${WIKI_ROOT}/assistant/adapters/hermes/"*.md; do
+    sed -i '' "s|^  wiki_path:.*|  wiki_path: ${WIKI_ROOT}|" "$adapter"
+done
+echo "  ✓ wiki_path → ${WIKI_ROOT}"
+echo ""
+
 # Instalar via symlink para manter sincronia automática com a wiki
 install_skill() {
     local name="$1"
