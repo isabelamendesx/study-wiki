@@ -27,7 +27,7 @@ Ex: `/prepare fundamentos-eng-software cap-5`
 
 ## Diretrizes de Estilo Didático
 
-O TL;DR e o Resumo devem ser **didáticos e envolventes**, não resumos secos. A Isabela aprende melhor com:
+O TL;DR e o Resumo devem ser **didáticos e envolventes**, não resumos secos. O usuário aprende melhor com:
 
 ### Estrutura narrativa em atos
 

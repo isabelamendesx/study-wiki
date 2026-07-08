@@ -28,7 +28,7 @@ Ex: `/ingest fundamentos-eng-software cap-5`
 
 ## Diretrizes de Estilo Didático
 
-As páginas da wiki devem ser **didáticas e visualmente ricas**, seguindo o mesmo estilo do `/prepare`. A Isabela aprende melhor com explicações narrativas, exemplos concretos e elementos visuais.
+As páginas da wiki devem ser **didáticas e visualmente ricas**, seguindo o mesmo estilo do `/prepare`. O usuário aprende melhor com explicações narrativas, exemplos concretos e elementos visuais.
 
 ### Fase 1: discuss-source (diálogo)
 
@@ -36,7 +36,7 @@ Ao discutir a fonte com o usuário:
 - Estruture a explicação em **3 atos** (problema → solução → aplicação prática)
 - Use **metáforas e analogias** para conceitos abstratos
 - Destaque **o que mudou** em relação ao conhecimento prévio (antes × depois)
-- Faça **perguntas provocativas** que conectem o conteúdo à experiência da Isabela (Java, Go, Spring, Kafka, K8s)
+- Faça **perguntas provocativas** que conectem o conteúdo à experiência do usuário (stack, projetos, desafios atuais)
 - Se o capítulo tiver um **kata ou case study**, use-o como fio condutor da explicação
 
 ### Fase 2: synthesize-page (criação da página)
