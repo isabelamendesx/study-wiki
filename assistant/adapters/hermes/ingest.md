@@ -26,6 +26,55 @@ Ex: `/ingest fundamentos-eng-software cap-5`
 7. **update-competency-map** — Atualizar `acompanhamento-competencias.md`.
 8. **update-log** — Registrar a ingestão em `log.md`.
 
+## Diretrizes de Estilo Didático
+
+As páginas da wiki devem ser **didáticas e visualmente ricas**, seguindo o mesmo estilo do `/prepare`. A Isabela aprende melhor com explicações narrativas, exemplos concretos e elementos visuais.
+
+### Fase 1: discuss-source (diálogo)
+
+Ao discutir a fonte com o usuário:
+- Estruture a explicação em **3 atos** (problema → solução → aplicação prática)
+- Use **metáforas e analogias** para conceitos abstratos
+- Destaque **o que mudou** em relação ao conhecimento prévio (antes × depois)
+- Faça **perguntas provocativas** que conectem o conteúdo à experiência da Isabela (Java, Go, Spring, Kafka, K8s)
+- Se o capítulo tiver um **kata ou case study**, use-o como fio condutor da explicação
+
+### Fase 2: synthesize-page (criação da página)
+
+A página final deve incluir:
+
+**Elementos textuais:**
+- Estrutura clara com headings hierárquicos
+- Definições em destaque (blockquote ou callout)
+- Contraste antes × depois quando aplicável
+- Exemplos numéricos e cenários concretos
+
+**Elementos visuais (obrigatórios):**
+- **Diagramas Mermaid** com a paleta Minimalista TCC para conceitos estruturais
+- **Tabelas** para comparações (múltiplas entidades, múltiplos atributos)
+- **Diagramas ASCII** para conceitos simples que não justificam Mermaid
+- **Callouts** (> [!note], > [!warning], > [!tip]) para destaques
+
+**Elementos de síntese:**
+- Uma seção de **"Na prática"** com aplicações no mundo real
+- **Conexões** com outras páginas da wiki (wikilinks com pipe syntax)
+- **Litmus tests** ou heurísticas de decisão quando o capítulo oferecer
+
+### Fase 3: enrich-visuals (enriquecimento visual)
+
+- Use a paleta **Minimalista TCC**: azul #dbeafe/#3b82f6, verde #dcfce7/#22c55e, amarelo #fef9c3/#eab308, cinza #f3f4f6/#9ca3af, rosa #fee2e2/#ef4444
+- Diagramas Mermaid devem ter no máximo 6-8 nós para manter legibilidade
+- Tabelas com mais de 4 colunas devem ser repensadas (dividir em múltiplas tabelas ou usar outro formato)
+- Ver `references/mermaid-pitfalls.md` para erros comuns de sintaxe
+
+### O que evitar
+
+- Páginas que são apenas transcrições do capítulo
+- Blocos de texto sem quebras visuais (máximo 4-5 linhas por parágrafo)
+- Diagramas complexos demais (prefira 2-3 diagramas pequenos a 1 enorme)
+- Jargão sem definição contextual
+- Listas secas de tópicos sem elaboração
+
 ## Estratégias usadas
 
 - `assistant/strategies/discuss-source.md`
