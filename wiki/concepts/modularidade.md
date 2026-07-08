@@ -18,6 +18,7 @@ aliases:
   - Modularity
   - Modularização
   - Coesão e Acoplamento
+icon: 📘
 ---
 # Modularidade
 
@@ -190,6 +191,7 @@ A progressão natural é: use **coesão e acoplamento** para decisões táticas 
 
 - [[arquitetura-de-software|Arquitetura de Software]] — a 1ª lei (tudo é trade-off) é o fundamento por trás das decisões de modularização.
 - [[conascencia|Conascência]] — a ferramenta mais refinada para medir acoplamento.
+- [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — modularidade é uma métrica estrutural chave; complexidade ciclomática mede a saúde da modularização
 - [[acompanhamento-competencias|Mapa de Estudos]]
 
 > [!note] Páginas futuras

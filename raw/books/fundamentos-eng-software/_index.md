@@ -14,7 +14,7 @@
 - [x] Cap 3: Modularidade — lido em 2026-06-21, [[../../../wiki/concepts/modularidade|Modularidade]], [[conascencia|Conascência]]
 - [x] Cap 4: Definição das Características da Arquitetura — lido em 2026-07-01, [[../../../wiki/concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
 - [x] Cap 5: Identificando Características Arquiteturais — lido em 2026-07-06, [[../../../wiki/concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
-- [ ] Cap 6: 
+- [x] Cap 6: Medindo e Controlando as Características Arquiteturais — lido em 2026-07-08, [[../../../wiki/concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../../../wiki/concepts/fitness-functions|Fitness Functions]]
 - [ ] Cap 7:
 - [ ] Cap 8:
 - [ ] Cap 9:

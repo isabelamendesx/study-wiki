@@ -21,6 +21,7 @@ aliases:
   - Quality Attributes
   - -ilities
   - NFRs
+icon: 📘
 ---
 # Características Arquiteturais
 
@@ -117,6 +118,9 @@ A saída é **iteração**: se você consegue mudar a arquitetura com facilidade
 
 - [[arquitetura-de-software|Arquitetura de Software]] — características arquiteturais são uma das 4 dimensões da arquitetura
 - [[modularidade|Modularidade]] — modularidade é uma característica estrutural
+- [[identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]] — como identificar quais -ilities importam (Cap 5)
+- [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — como medir as -ilities com métricas objetivas (Cap 6)
+- [[fitness-functions|Fitness Functions]] — governança automatizada das características arquiteturais (Cap 6)
 - [[acompanhamento-competencias|Mapa de Estudos]] — cobre `architecture`, `technical-breadth`, `security`, `operation`, `performance`
 
 > [!note] Páginas futuras

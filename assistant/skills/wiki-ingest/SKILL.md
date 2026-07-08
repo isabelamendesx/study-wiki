@@ -19,7 +19,7 @@ Ex: `/ingest fundamentos-eng-software cap-5`
 
 1. **discuss-source** — Ler a fonte, resumir, destacar novidades, perguntar. Aguardar OK do usuário.
 2. **synthesize-page** — Criar página(s) na wiki usando o template adequado (`assistant/templates/`).
-3. **enrich-visuals** — Adicionar diagramas Mermaid (paleta Minimalista TCC), tabelas, callouts.
+3. **enrich-visuals** — Adicionar diagramas Mermaid (paleta Minimalista TCC), tabelas, callouts. Ver `references/mermaid-pitfalls.md` para erros comuns de sintaxe.
 4. **map-competencies** — Mapear para áreas de engenharia de software.
 5. **update-graph** — Adicionar wikilinks (pipe syntax, mínimo 2).
 6. **update-book-index** — Atualizar `_index.md` do livro com progresso de leitura.

@@ -21,7 +21,6 @@ aliases:
   - Descoberta de características arquiteturais
 icon: 📘
 ---
-
 # Identificação de Características Arquiteturais
 
 Identificar características arquiteturais não é sobre consultar um catálogo de "-ilities" e marcar as que "parecem importantes". É um processo de **escuta ativa + tradução técnica**: ouvir stakeholders de negócio, ler requisitos explícitos e — mais difícil — perceber o que não está escrito em lugar nenhum mas todo mundo no domínio sabe. O resultado nunca é uma lista longa; é o **menor conjunto viável** de características que, se negligenciadas, fariam o sistema falhar.
@@ -157,6 +156,8 @@ O exercício mostra como um requisito aparentemente simples ("usuários podem pe
 ## Conexões
 
 - [[caracteristicas-arquiteturais|Características Arquiteturais]] — o capítulo 4 define *o que são*; este capítulo 5 ensina *como identificá-las*
+- [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — como medir as -ilities com métricas objetivas (Cap 6 — passo seguinte)
+- [[fitness-functions|Fitness Functions]] — governança automatizada das características arquiteturais (Cap 6)
 - [[arquitetura-de-software|Arquitetura de Software]] — características arquiteturais são uma das 4 dimensões, e a 1ª Lei (tudo é trade-off) é o fundamento por trás da poda
 - [[acompanhamento-competencias|Mapa de Estudos]] — cobre `architecture`, `product-acumen`, `domain-knowledge`, `technical-communication` e `problem-decomposition`
 

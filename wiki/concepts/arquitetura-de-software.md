@@ -16,6 +16,7 @@ understanding: low
 aliases:
   - Software Architecture
   - Definição de Arquitetura
+icon: 📘
 ---
 # Arquitetura de Software
 

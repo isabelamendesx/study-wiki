@@ -17,6 +17,7 @@ understanding: low
 aliases:
   - Connascence
   - Propriedades da Conascência
+icon: 📘
 ---
 # Conascência
 

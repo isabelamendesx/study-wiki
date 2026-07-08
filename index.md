@@ -9,6 +9,8 @@ Catálogo de todas as páginas da wiki, organizadas por categoria.
 - [[conascencia|Conascência]] — A evolução do acoplamento: tipos estáticos e dinâmicos, Page-Jones, Weirich e como usar no dia a dia.
 - [[caracteristicas-arquiteturais|Características Arquiteturais]] — Os "-ilities": operacionais, estruturais e transversais. Trade-offs, implícitas vs. explícitas e a arquitetura "menos pior".
 - [[identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]] — Como identificar -ilities: preocupações de domínio, requisitos explícitos e conhecimento implícito. O anti-padrão Vasa e a análise de trade-offs.
+- [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — Métricas operacionais, estruturais e de processo para medir -ilities. Complexidade ciclomática e budgets estatísticos.
+- [[fitness-functions|Fitness Functions]] — Governança arquitetural automatizada: JDepend, ArchUnit, Chaos Monkey. A metáfora do Checklist Manifesto e estratégias incrementais.
 
 ## Comparisons
 

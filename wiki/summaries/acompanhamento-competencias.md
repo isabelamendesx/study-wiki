@@ -28,35 +28,36 @@ aliases:
   - Mapa de Estudos
   - Rastreador de Estudos
   - Acompanhamento de Competências
+icon: 📝
 ---
 # Mapa de Estudos
 
 Mapa de áreas de engenharia de software que estou estudando → páginas da wiki
 que cobrem cada área → temas que ainda quero explorar.
 
-**Última atualização:** 2026-07-06 — ingestão do Cap 5 (Identificação de Características Arquiteturais).
+**Última atualização:** 2026-07-08 — ingestão do Cap 6 (Medição de Características Arquiteturais + Fitness Functions).
 
 ---
 
 ## Áreas com cobertura
 
 ### Architecture
-- **Páginas:** 5 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Páginas:** 7 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
 
 ### Technical Breadth
-- **Páginas:** 5 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Páginas:** 7 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
 
 ### Code Quality
-- **Páginas:** 3 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]]
+- **Páginas:** 5 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
 
 ### Operation
-- **Páginas:** 1 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
+- **Páginas:** 3 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
 
 ### Security
 - **Páginas:** 1 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
 
 ### Performance
-- **Páginas:** 1 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
+- **Páginas:** 2 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]]
 
 ---
 
@@ -67,7 +68,7 @@ que cobrem cada área → temas que ainda quero explorar.
 - **Próximos passos:** Aprofundar tradução de necessidades de negócio → requisitos técnicos com mais exemplos práticos.
 
 ### Data Driven
-- **Páginas:** 0
+- **Páginas:** 2 — [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
 - **Próximos passos:** Coleta de métricas, análise de padrões, monitoramento de features contra objetivos.
 
 ### Technical Communication

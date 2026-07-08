@@ -67,3 +67,14 @@ Complementa a página de [[caracteristicas-arquiteturais|Características Arquit
 Primeira página a cobrir `product-acumen`, `domain-knowledge`, `technical-communication` e `problem-decomposition`.
 4 áreas saíram de "sem cobertura" no mapa de competências.
 
+## [2026-07-08] ingestão | Cap 6: Medindo e Controlando as Características Arquiteturais
+
+Livro: Fundamentos de Engenharia de Software. Criadas páginas [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]]
+(três categorias de métricas: operacionais com budgets estatísticos, estruturais com complexidade
+ciclomática, e de processo com métricas de deployabilidade; o ciclo processo → arquitetura)
+e [[fitness-functions|Fitness Functions]] (governança automatizada: JDepend, ArchUnit,
+Netflix Simian Army; metáfora do Checklist Manifesto; estratégia incremental para bases bagunçadas).
+Fecha o arco "características arquiteturais" (caps 4-6). Cobriu `architecture`, `code-quality`,
+`performance`, `data-driven`, `technical-breadth` e `operation`.
+Pela primeira vez `data-driven` tem páginas no mapa de competências.
+
