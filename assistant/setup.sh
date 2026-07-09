@@ -6,86 +6,68 @@ set -euo pipefail
 HERMES_SKILLS_DIR="${HOME}/.hermes/skills"
 CLAUDE_SKILLS_DIR="${HOME}/.claude/skills"
 WIKI_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+SKILLS_SRC="${WIKI_ROOT}/assistant/skills"
 
 echo "Study Wiki — Setup de Skills"
 echo "   Wiki: ${WIKI_ROOT}"
+echo "   Skills: ${SKILLS_SRC}"
 echo ""
 
-# === Hermes ===
-echo "┌─ Hermes ──────────────────────────────"
-echo "│  Skills dir: ${HERMES_SKILLS_DIR}"
-
-# Atualizar wiki_path nos metadados das skills para refletir o path real
-echo "│  Atualizando wiki_path nos adapters..."
-for adapter in "${WIKI_ROOT}/assistant/adapters/hermes/"*.md; do
-    sed -i '' "s|^  wiki_path:.*|  wiki_path: ${WIKI_ROOT}|" "$adapter"
+# Atualizar wiki_path nas skills centrais (fonte única)
+echo "Atualizando wiki_path nas skills..."
+for skill_dir in "${SKILLS_SRC}/wiki-"*; do
+    skill_file="${skill_dir}/SKILL.md"
+    if [ -f "$skill_file" ]; then
+        sed -i '' "s|^  wiki_path:.*|  wiki_path: ${WIKI_ROOT}|" "$skill_file"
+    fi
 done
-echo "│  ✓ wiki_path → ${WIKI_ROOT}"
+echo "  ✓ wiki_path → ${WIKI_ROOT}"
+echo ""
 
-install_hermes_skill() {
+SKILLS=(ingest prepare ask assess lint crystallize progress)
+
+install_skill() {
     local name="$1"
-    local source="${WIKI_ROOT}/assistant/adapters/hermes/${name}.md"
-    local target_dir="${HERMES_SKILLS_DIR}/wiki-${name}"
+    local target_base="$2"
+    local label="$3"
+
+    local source="${SKILLS_SRC}/wiki-${name}/SKILL.md"
+    local target_dir="${target_base}/wiki-${name}"
     local target_file="${target_dir}/SKILL.md"
 
     if [ ! -f "$source" ]; then
-        echo "│  ✗ ${name}: fonte não encontrada"
+        echo "  ✗ ${name}: fonte não encontrada em ${source}"
         return 1
     fi
 
     rm -rf "$target_dir" 2>/dev/null || true
     mkdir -p "$target_dir"
     ln -s "$source" "$target_file"
-    echo "│  ✓ wiki-${name}"
 }
 
-SKILLS=(ingest prepare ask assess lint crystallize progress)
-
-echo "│  Instalando skills..."
+# === Hermes ===
+echo "┌─ Hermes ──────────────────────────────"
+echo "│  Destino: ${HERMES_SKILLS_DIR}"
 for skill in "${SKILLS[@]}"; do
-    install_hermes_skill "$skill"
+    install_skill "$skill" "$HERMES_SKILLS_DIR" "Hermes"
+    echo "│  ✓ wiki-${skill}"
 done
-echo "│  ✅ ${#SKILLS[@]} skills instaladas"
+echo "│  ✅ ${#SKILLS[@]} skills"
 echo "└───────────────────────────────────────"
 echo ""
 
 # === Claude Code ===
 echo "┌─ Claude Code ─────────────────────────"
-echo "│  Skills dir: ${CLAUDE_SKILLS_DIR}"
-
-# Atualizar wiki_path nos adapters Claude Code
-echo "│  Atualizando wiki_path nos adapters..."
-for adapter in "${WIKI_ROOT}/assistant/adapters/claude-code/"*.md; do
-    sed -i '' "s|^  wiki_path:.*|  wiki_path: ${WIKI_ROOT}|" "$adapter"
-done
-echo "│  ✓ wiki_path → ${WIKI_ROOT}"
-
-install_claude_skill() {
-    local name="$1"
-    local source="${WIKI_ROOT}/assistant/adapters/claude-code/${name}.md"
-    local target_dir="${CLAUDE_SKILLS_DIR}/wiki-${name}"
-    local target_file="${target_dir}/SKILL.md"
-
-    if [ ! -f "$source" ]; then
-        echo "│  ✗ ${name}: fonte não encontrada"
-        return 1
-    fi
-
-    rm -rf "$target_dir" 2>/dev/null || true
-    mkdir -p "$target_dir"
-    ln -s "$source" "$target_file"
-    echo "│  ✓ wiki-${name}"
-}
-
-echo "│  Instalando skills..."
+echo "│  Destino: ${CLAUDE_SKILLS_DIR}"
 for skill in "${SKILLS[@]}"; do
-    install_claude_skill "$skill"
+    install_skill "$skill" "$CLAUDE_SKILLS_DIR" "Claude Code"
+    echo "│  ✓ wiki-${skill}"
 done
-echo "│  ✅ ${#SKILLS[@]} skills instaladas"
+echo "│  ✅ ${#SKILLS[@]} skills"
 echo "└───────────────────────────────────────"
 echo ""
 
-echo "As skills são symlinks para a wiki → sempre atualizadas automaticamente."
+echo "As skills são symlinks diretos para assistant/skills/ → sempre atualizadas."
 echo ""
 echo "Para verificar:"
 echo "  hermes skills list | grep wiki-"
