@@ -1,19 +1,20 @@
 ---
 name: wiki-ask
 description: "Responde perguntas sobre conceitos da Study Wiki com citações das fontes e links para as páginas relevantes."
+disable-model-invocation: true
 metadata:
   wiki_path: /Users/isabelam/Downloads/study-wiki
 ---
 
-# /ask — Perguntar à Wiki
+# /wiki-ask — Perguntar à Wiki
 
 Responde perguntas sobre conceitos estudados com citações das fontes e links para páginas relevantes.
 
 ## Entrada
 
-`/ask <pergunta>`
+`/wiki-ask <pergunta>`
 
-Ex: `/ask "Qual a diferença entre conascência estática e dinâmica?"`
+Ex: `/wiki-ask "Qual a diferença entre conascência estática e dinâmica?"`
 
 ## Fluxo
 

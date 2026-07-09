@@ -1,18 +1,19 @@
 ---
 name: wiki-progress
 description: "Consulta e atualiza o progresso de leitura e gaps de competência na Study Wiki."
+disable-model-invocation: true
 metadata:
   wiki_path: /Users/isabelam/Downloads/study-wiki
 ---
 
-# /progress — Progresso e Gaps
+# /wiki-progress — Progresso e Gaps
 
 Consulta o progresso de leitura dos livros e identifica gaps de cobertura por área de engenharia de software.
 
 ## Entrada
 
-`/progress` — gaps de competência + progresso geral  
-`/progress fundamentos-eng-software` — progresso de um livro específico
+`/wiki-progress` — gaps de competência + progresso geral  
+`/wiki-progress fundamentos-eng-software` — progresso de um livro específico
 
 ## Fluxo
 
