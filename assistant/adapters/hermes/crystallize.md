@@ -1,1 +1,0 @@
-../../skills/wiki-crystallize/SKILL.md

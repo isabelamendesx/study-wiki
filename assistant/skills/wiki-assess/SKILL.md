@@ -5,7 +5,6 @@ disable-model-invocation: true
 metadata:
   wiki_path: /Users/isabelam/Downloads/study-wiki
 ---
-
 # /wiki-assess — Autoavaliação
 
 Gera perguntas de verificação sobre um conceito ou fonte, avalia as respostas do usuário e atualiza o campo `understanding`.

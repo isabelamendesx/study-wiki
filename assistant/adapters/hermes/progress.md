@@ -1,1 +1,0 @@
-../../skills/wiki-progress/SKILL.md

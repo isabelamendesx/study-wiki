@@ -1,1 +1,0 @@
-../../skills/wiki-assess/SKILL.md

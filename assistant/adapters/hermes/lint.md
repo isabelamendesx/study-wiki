@@ -1,1 +1,0 @@
-../../skills/wiki-lint/SKILL.md
