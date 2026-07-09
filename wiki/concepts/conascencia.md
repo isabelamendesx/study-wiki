@@ -1,7 +1,7 @@
 ---
 title: "Conascência"
 created: "2026-06-21"
-updated: "2026-06-21"
+updated: "2026-07-08"
 type: concept
 tags:
   - architecture
@@ -13,7 +13,8 @@ competencies:
   - architecture
   - code-quality
   - technical-breadth
-understanding: low
+  - infrastructure
+understanding: medium
 aliases:
   - Connascence
   - Propriedades da Conascência
@@ -175,6 +176,7 @@ Imagine dois microsserviços: `pedido-service` e `rastreio-service`.
 
 - [[modularidade|Modularidade]] — coesão e acoplamento são as ferramentas base; a conascência é o refinamento.
 - [[arquitetura-de-software|Arquitetura de Software]] — decisões de arquitetura (hard constraints) frequentemente existem para evitar conascências fortes entre serviços.
+- [[architecture-quantum|Architecture Quantum]] — a conascência síncrona de comunicação é o critério que define os limites de um quantum.
 - [[acompanhamento-competencias|Mapa de Estudos]]
 
 > [!note] Páginas futuras

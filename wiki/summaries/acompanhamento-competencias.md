@@ -1,7 +1,7 @@
 ---
 title: "Mapa de Estudos"
 created: "2026-06-18"
-updated: "2026-07-05"
+updated: "2026-07-08"
 type: summary
 tags:
   - self-assessment
@@ -35,29 +35,29 @@ icon: 📝
 Mapa de áreas de engenharia de software que estou estudando → páginas da wiki
 que cobrem cada área → temas que ainda quero explorar.
 
-**Última atualização:** 2026-07-08 — ingestão do Cap 6 (Medição de Características Arquiteturais + Fitness Functions).
+**Última atualização:** 2026-07-08 — reingestão do Cap 7 (Escopo das Características Arquiteturais + Architecture Quantum) com novo estilo didático.
 
 ---
 
 ## Áreas com cobertura
 
 ### Architecture
-- **Páginas:** 7 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
+- **Páginas:** 8 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]], [[../concepts/architecture-quantum|Architecture Quantum]]
 
 ### Technical Breadth
-- **Páginas:** 7 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
+- **Páginas:** 8 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]], [[../concepts/architecture-quantum|Architecture Quantum]]
 
 ### Code Quality
-- **Páginas:** 5 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
+- **Páginas:** 6 — [[arquitetura-de-software|Arquitetura de Software]], [[../concepts/modularidade|Modularidade]], [[conascencia|Conascência]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]], [[../concepts/architecture-quantum|Architecture Quantum]]
 
 ### Operation
-- **Páginas:** 3 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]]
+- **Páginas:** 4 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/fitness-functions|Fitness Functions]], [[../concepts/architecture-quantum|Architecture Quantum]]
 
 ### Security
-- **Páginas:** 1 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]]
+- **Páginas:** 2 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/architecture-quantum|Architecture Quantum]]
 
 ### Performance
-- **Páginas:** 2 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]]
+- **Páginas:** 3 — [[../concepts/caracteristicas-arquiteturais|Características Arquiteturais]], [[../concepts/medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]], [[../concepts/architecture-quantum|Architecture Quantum]]
 
 ---
 
@@ -76,11 +76,11 @@ que cobrem cada área → temas que ainda quero explorar.
 - **Próximos passos:** Comunicação com stakeholders, docs, diagramas e discussões técnicas.
 
 ### Problem Decomposition
-- **Páginas:** 1 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Páginas:** 2 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/architecture-quantum|Architecture Quantum]]
 - **Próximos passos:** Análise de trade-offs, priorização 80/20, decomposição de problemas complexos.
 
 ### Domain Knowledge
-- **Páginas:** 1 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]]
+- **Páginas:** 2 — [[../concepts/identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]], [[../concepts/architecture-quantum|Architecture Quantum]]
 - **Próximos passos:** Aprofundar conhecimento implícito de domínio, padrões específicos de indústria.
 
 ### Technical Depth
@@ -96,7 +96,7 @@ que cobrem cada área → temas que ainda quero explorar.
 - **Próximos passos:** Scrum, Kanban, gestão de tempo, priorização, riscos responsáveis.
 
 ### Infrastructure
-- **Páginas:** 0
+- **Páginas:** 1 — [[../concepts/architecture-quantum|Architecture Quantum]]
 - **Próximos passos:** Cloud (AWS/GCP), Kubernetes, Linux, IaC (Terraform/Helm).
 
 ### AI Engineering

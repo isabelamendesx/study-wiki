@@ -17,6 +17,16 @@ metadados dos arquivos em `assistant/adapters/hermes/*.md` para o path real da w
 antes de criar os symlinks. Antes era necessário editar manualmente após clonar em
 outro diretório ou máquina.
 
+## [2026-07-08] ingestão | Cap 7: Escopo das Características Arquiteturais (reingestão)
+
+Livro: Fundamentos de Engenharia de Software. Reingestão com novo estilo didático (3 atos).
+Criada página [[wiki/concepts/architecture-quantum|Architecture Quantum]]
+(independentemente deployável, alta coesão funcional, conascência síncrona).
+Kata Going, Going, Gone com diagrama Mermaid dos 3 quanta. Exemplo real de redução
+de conascência: DELETE fire-and-forget. Litmus test domínio vs arquitetura.
+Cobriu `architecture`, `technical-breadth`, `domain-knowledge`, `problem-decomposition`,
+`infrastructure` e `operation`.
+
 ## [2026-06-18] scaffold | Estrutura inicial da wiki de estudos criada
 
 Criada a estrutura de diretórios, SCHEMA.md, README.md, index.md, log.md,

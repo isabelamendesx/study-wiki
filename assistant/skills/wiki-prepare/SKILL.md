@@ -63,14 +63,52 @@ Ex: `/prepare fundamentos-eng-software cap-5`
 - Títulos de arquivo sempre em português: `<NN> - <título-traduzido>.md` (ex: `5 - Identificando Caracteristicas Arquiteturais.md`)
 - Template criado diretamente com TL;DR + Resumo preenchidos pela LLM
 
+## Diretrizes de Estilo Didático
+
+O TL;DR e o Resumo devem ser **didáticos e envolventes**, não resumos secos. O usuário aprende melhor com:
+
+### Estrutura narrativa em atos
+
+Organize o Resumo como uma história com começo, meio e fim:
+- **Ato 1 — O problema:** contexto, premissa antiga, o que estava errado
+- **Ato 2 — A solução:** os conceitos novos, com definições claras e exemplos
+- **Ato 3 — A aplicação prática:** caso de uso, kata, exemplo concreto que amarra tudo
+
+### Elementos obrigatórios
+
+- **Metáforas concretas:** use analogias do mundo real para explicar conceitos abstratos
+- **Antes × Depois:** contraste a abordagem antiga com a nova (ex: "Antigamente fazia-se X. Agora, com Y, faz-se Z.")
+- **Exemplos numéricos:** quando o capítulo trouxer números, use-os
+- **Diagramas ASCII:** para conceitos estruturais, use diagramas de bloco simples
+- **Tabelas comparativas:** quando houver múltiplas entidades com atributos diferentes
+- **Litmus tests:** se o capítulo oferecer um teste prático para decidir entre opções, destaque-o
+- **Frase-resumo de uma sentença:** capture a essência do capítulo em uma frase
+
+### O que evitar
+
+- Parágrafos longos sem quebra visual
+- Listas genéricas de tópicos sem exemplos
+- Jargão sem explicação
+- Resumos que só repetem o índice do capítulo
+
 ## Pitfalls
 
 ### EPUB
+
 1. **Template de notas no final do source.** Alguns EPUBs da O'Reilly incluem um template de "Chapter Notes" como conteúdo do capítulo. Após extrair com pandoc, verifique o final do source e remova qualquer template de notas (começa com `# Cap null: null` ou similar) — isso é artefato do EPUB, não conteúdo real.
-2. **Artefatos do pandoc.** O output do pandoc contém marcadores HTML (`[]{#index_split...}`) e classes CSS (`{.xflip}`). Limpe com `sed 's/\[\]{#[^}]*}//g; s/{\.\\w+}//g'` antes de salvar o source.
+
+2. **Artefatos do pandoc.** O output do pandoc contém marcadores HTML (`[]{#index_split...}`) e classes CSS (`{.xflip}`), além de links internos quebrados como `[text](#index_split_001.html_p99)`. A limpeza requer múltiplos passos de regex — `sed` simples não basta. Use Python com `re.sub` (ver `references/epub-cleanup.md` para o script completo).
+
 3. **Linhas de página quebradas.** O EPUB da O'Reilly intercala números de página como `**65**` no meio das frases. O pandoc não consegue removê-los. Considere limpar manualmente ou aceitar como ruído aceitável.
 
+4. **Headers de página com número.** O EPUB da O'Reilly intercala headers de página como `**92 | Chapter 7: Scope of Architecture Characteristics**` e `**Architectural Quanta and Granularity | 93**`. Remova com regex: `re.sub(r'\*\*\d+ \| Chapter \d+: .*?\*\*', '', content)` e `re.sub(r'\*\*[^*]+\| \d+\*\*', '', content)`.
+
+5. **Palavras quebradas entre páginas.** O EPUB quebra palavras com hífen no limite de página: `syn‐\n\nchronous`, `Cus\ntomer`, `statical\ny`. Reúna com Python: `re.sub(r'(\w)[\‐\-]\s*\n\s*(\w)', r'\1\2', content)`. Casos especiais como "statical y" e "Cus tomer" exigem replaces literais adicionais.
+
 ### PDF
-4. **O pdftotext -layout é essencial.** Sem `-layout`, o texto perde a estrutura de parágrafos e os capítulos ficam ilegíveis.
-5. **Cabeçalhos/rodapés de página.** O formato é tipicamente `NNN | Chapter N: Título`. Use regex para removê-los; a referência `pdf-cleanup.md` tem o padrão exato.
-6. **Palavras hifenizadas na quebra de linha.** PDFs quebram palavras com `‐` (Unicode hyphen, U+2010) ou `-` (ASCII) no final da linha. O script de limpeza deve tratar ambos.
+
+6. **O pdftotext -layout é essencial.** Sem `-layout`, o texto perde a estrutura de parágrafos e os capítulos ficam ilegíveis.
+
+7. **Cabeçalhos/rodapés de página.** O formato é tipicamente `NNN | Chapter N: Título`. Use regex para removê-los; a referência `pdf-cleanup.md` tem o padrão exato.
+
+8. **Palavras hifenizadas na quebra de linha.** PDFs quebram palavras com `‐` (Unicode hyphen, U+2010) ou `-` (ASCII) no final da linha. O script de limpeza deve tratar ambos.

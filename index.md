@@ -11,6 +11,7 @@ Catálogo de todas as páginas da wiki, organizadas por categoria.
 - [[identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]] — Como identificar -ilities: preocupações de domínio, requisitos explícitos e conhecimento implícito. O anti-padrão Vasa e a análise de trade-offs.
 - [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — Métricas operacionais, estruturais e de processo para medir -ilities. Complexidade ciclomática e budgets estatísticos.
 - [[fitness-functions|Fitness Functions]] — Governança arquitetural automatizada: JDepend, ArchUnit, Chaos Monkey. A metáfora do Checklist Manifesto e estratégias incrementais.
+- [[architecture-quantum|Architecture Quantum]] — O escopo das características arquiteturais: independentemente deployável, alta coesão funcional e conascência síncrona. O kata Going, Going, Gone.
 
 ## Comparisons
 
