@@ -151,14 +151,7 @@ Após salvar, atualizar `index.md` com a nova entrada na seção Summaries.
 
 Se `log.md` não tem entradas ou `competencies.md` não tem `focus_areas`:
 
-```
-📋 Revisão — <nome>
-
-Ainda não há dados suficientes. Para começar:
-  1. Rode /wiki-roadmap para configurar seu perfil
-  2. Estude algo com /wiki-prepare + /wiki-ingest
-  3. Depois volte aqui!
-```
+```\n# Revisão — <nome>\n\nAinda não há dados suficientes. Para começar:\n\n1. Rode /wiki-roadmap para configurar seu perfil\n2. Estude algo com /wiki-prepare + /wiki-ingest\n3. Depois volte aqui!\n```
 
 ## Estratégias usadas
 

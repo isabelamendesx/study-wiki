@@ -1,6 +1,6 @@
 ---
 generated_by: /wiki-roadmap
-last_updated: 2026-07-12
+last_updated: null
 ---
 
 # Plano de Estudos
@@ -8,42 +8,20 @@ last_updated: 2026-07-12
 Centro do roadmap. Concentra:
 - **Catálogo de Áreas** — todas as áreas e tópicos que o sistema conhece
   (fontes: roadmap.sh). O usuário pode adicionar áreas novas aqui.
-- **Áreas de Foco** — quais áreas o usuário está estudando agora, com status
-  e metas. É a instância pessoal do catálogo.
+- **Áreas de Foco** — quais áreas o usuário está estudando, com status.
+  Preenchido pelo `/wiki-roadmap`.
 
 Gerado e mantido por `/wiki-roadmap`. As skills leem este arquivo para classificar
-páginas e sugerir gaps. Edite à vontade — a LLM respeita edições manuais.
+páginas e sugerir gaps.
 
 ---
 
 ## Perfil
 
 ```yaml
-profile:
-  name: "Isabela Gomes"
-  role: "Software Engineer Júnior II"
-  area: "Backend / Logística"
-  company: "iFood"
-  horizon: "Jul–Dez 2026"
-  hard_skills:
-    languages: [Java, Go, Kotlin]
-    frameworks: [Spring Boot]
-    infra: [Kubernetes, Docker, Helm]
-    data: [PostgreSQL, Redis, Kafka, Databricks]
-    cloud: [AWS (ECS, RDS, SQS, SNS)]
-    observability: [Datadog]
-  soft_skills:
-    methods: [Scrum, Kanban]
-    communication: [code review, documentação técnica]
-    leadership: [mentoria de júnior]
-  objective: |
-    1. Consolidar base em arquitetura de software
-    2. Aumentar profundidade técnica na stack (Java, Go, Spring, Kafka, K8s)
-    3. Desenvolver posicionamento ativo em discussões técnicas
-    4. Aplicar IA ao desenvolvimento (context engineering, spec-driven dev)
-  sources:
-    roadmaps: [roadmap.sh/backend, roadmap.sh/ai-engineer, roadmap.sh/software-architect]
-    pdi_corporativo: [feedback de performance (a adicionar)]
+# Preenchido automaticamente pelo /wiki-roadmap.
+# Rode o comando para configurar.
+profile: {}
 ```
 
 ---
@@ -182,159 +160,12 @@ As skills preencherão `covered_by` automaticamente.
 
 ---
 
-## Áreas de Foco (Jul–Dez 2026)
-
-Áreas que você está estudando ativamente. Ordenadas por prioridade.
-Os slugs de tópico referenciam o Catálogo acima.
+## Áreas de Foco
 
 ```yaml
-focus_areas:
-  - slug: ai-engineering
-    name: IA Aplicada à Engenharia
-    priority: critical
-    why: |
-      Objetivo declarado: "aplicar IA ao desenvolvimento".
-      roadmap.sh/ai-engineer: 6 tópicos, nenhum coberto.
-      Context engineering e spec-driven dev são o diferencial da próxima geração.
-    topics:
-      - slug: prompt-engineering
-        status: pending
-        covered_by: []
-      - slug: mcp
-        status: pending
-        covered_by: []
-      - slug: rag
-        status: pending
-        covered_by: []
-      - slug: code-agents
-        status: pending
-        covered_by: []
-      - slug: ai-safety
-        status: pending
-        covered_by: []
-      - slug: agent-orchestration
-        status: pending
-        covered_by: []
-
-  - slug: infrastructure
-    name: Infraestrutura & Cloud
-    priority: critical
-    why: |
-      roadmap.sh/backend + kubernetes: 11 tópicos, 0 cobertos.
-      Stack inclui K8s no dia a dia — dominar a fundo.
-      Base pra crescer além de "usuário de K8s".
-    topics:
-      - slug: container-runtime
-        status: pending
-        covered_by: []
-      - slug: kubernetes-core
-        status: pending
-        covered_by: []
-      - slug: operators
-        status: pending
-        covered_by: []
-      - slug: cni
-        status: pending
-        covered_by: []
-      - slug: csi
-        status: pending
-        covered_by: []
-      - slug: iac
-        status: pending
-        covered_by: []
-      - slug: cicd
-        status: pending
-        covered_by: []
-      - slug: service-mesh
-        status: pending
-        covered_by: []
-      - slug: helm-kustomize
-        status: pending
-        covered_by: []
-
-  - slug: technical-depth
-    name: Profundidade Técnica na Stack
-    priority: high
-    why: |
-      Objetivo: "aumentar profundidade técnica na stack".
-      Júnior II → Pleno: dominar o que usa no dia a dia.
-      Go profiling, Java GC, Kafka internals.
-    topics:
-      - slug: go-profiling
-        status: pending
-        covered_by: []
-      - slug: go-concurrency
-        status: pending
-        covered_by: []
-      - slug: java-gc
-        status: pending
-        covered_by: []
-      - slug: java-concurrency
-        status: pending
-        covered_by: []
-      - slug: kafka-internals
-        status: pending
-        covered_by: []
-      - slug: jvm-internals
-        status: pending
-        covered_by: []
-
-  - slug: architecture
-    name: Arquitetura de Software
-    priority: medium
-    why: |
-      Objetivo: "consolidar base em arquitetura".
-      6/9 tópicos já cobertos com páginas na wiki.
-      Fechar os 3 gaps restantes: ADRs, distributed systems, integration patterns.
-    topics:
-      - slug: architectural-patterns
-        status: covered
-        covered_by: [wiki/concepts/arquitetura-de-software.md]
-      - slug: modularity
-        status: covered
-        covered_by: [wiki/concepts/modularidade.md]
-      - slug: connascence
-        status: covered
-        covered_by: [wiki/concepts/conascencia.md]
-      - slug: fitness-functions
-        status: covered
-        covered_by: [wiki/concepts/fitness-functions.md]
-      - slug: architecture-quantum
-        status: covered
-        covered_by: [wiki/concepts/architecture-quantum.md]
-      - slug: system-design
-        status: covered
-        covered_by: [wiki/concepts/caracteristicas-arquiteturais.md]
-      - slug: adrs
-        status: pending
-        covered_by: []
-      - slug: distributed-systems
-        status: pending
-        covered_by: []
-      - slug: integration-patterns
-        status: pending
-        covered_by: []
-
-  - slug: technical-communication
-    name: Comunicação & Posicionamento Técnico
-    priority: medium
-    why: |
-      Objetivo: "posicionamento ativo em discussões técnicas".
-      Eliminar passividade e insegurança.
-      Área comportamental — prática no dia a dia.
-    topics:
-      - slug: tech-writing
-        status: pending
-        covered_by: []
-      - slug: code-review
-        status: pending
-        covered_by: []
-      - slug: diagramming
-        status: pending
-        covered_by: []
-      - slug: presentations
-        status: pending
-        covered_by: []
+# Preenchido pelo /wiki-roadmap após configurar o perfil.
+# Rode o comando para gerar suas áreas de foco.
+focus_areas: []
 ```
 
 ## Relações entre Áreas
@@ -357,5 +188,3 @@ graph LR
 
 | Data | Evento | Detalhe |
 |------|--------|---------|
-| 2026-07-12 | /wiki-roadmap refatoração | Perfil atualizado (Júnior II, Logística). 5 áreas: ai-engineering, infrastructure, technical-depth, architecture, technical-communication. Fontes: backend + ai-engineer + software-architect |
-| 2026-07-12 | /wiki-roadmap inicial | Refatoração do sistema de competências |

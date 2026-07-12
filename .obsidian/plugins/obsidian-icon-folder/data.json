@@ -48,23 +48,5 @@
   },
   "assistant/templates/summary.md": {
     "iconName": "📝"
-  },
-  "wiki/concepts/architecture-quantum.md": {
-    "iconName": "📘"
-  },
-  "wiki/concepts/caracteristicas-arquiteturais.md": {
-    "iconName": "📘"
-  },
-  "wiki/concepts/conascencia.md": {
-    "iconName": "📘"
-  },
-  "wiki/concepts/identificacao-caracteristicas-arquiteturais.md": {
-    "iconName": "📘"
-  },
-  "wiki/concepts/modularidade.md": {
-    "iconName": "📘"
-  },
-  "wiki/concepts/arquitetura-de-software.md": {
-    "iconName": "📘"
   }
 }
