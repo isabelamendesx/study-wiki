@@ -10,9 +10,21 @@ anotações de cursos e palestras — tudo interligado.
 ./setup
 ```
 
-Instala as 7 skills (`wiki-ingest`, `wiki-prepare`, `wiki-ask`,
-`wiki-assess`, `wiki-lint`, `wiki-crystallize`, `wiki-progress`)
-no Hermes. Depois é só usar de qualquer diretório.
+Cria symlinks das 9 skills (`wiki-ingest`, `wiki-prepare`, `wiki-ask`,
+`wiki-assess`, `wiki-lint`, `wiki-crystallize`, `wiki-progress`,
+`wiki-roadmap`, `wiki-review`) no Hermes e Claude Code.
+
+Depois do setup, configure seu plano de estudos:
+
+```bash
+/wiki-roadmap
+```
+
+A LLM vai te guiar: perfil, stacks, objetivo em 6 meses → e gera
+um roadmap em `assistant/domain/competencies.md` com áreas de foco
+e tópicos fundamentados em dados reais (roadmap.sh).
+
+Pronto. Agora é só usar de qualquer diretório: `/wiki-ingest`, `/wiki-ask`, `/wiki-assess`, `/wiki-progress`.
 
 ## 🎯 Como usar
 
@@ -20,28 +32,30 @@ no Hermes. Depois é só usar de qualquer diretório.
 
 ```
 1. Coloque o EPUB em raw/books/<livro>/sources/livro.epub
-2. /prepare <livro> <cap>     → extrai capítulo, preenche TL;DR + Resumo
-3. Complete o template         → insights, citações, dúvidas
-4. /ingest <livro> <cap>       → discute e cria páginas na wiki
-5. /assess <conceito>          → verifica seu entendimento
-6. /progress                   → vê gaps e progresso de leitura
+2. /wiki-prepare <livro> <cap>  → extrai capítulo, preenche TL;DR + Resumo
+3. Complete o template           → insights, citações, dúvidas
+4. /wiki-ingest <livro> <cap>    → discute e cria páginas na wiki
+5. /wiki-assess <conceito>       → verifica seu entendimento
+6. /wiki-progress                → vê gaps e progresso de leitura
 ```
 
 ### Artigos, cursos, palestras
 
 ```
 1. Coloque a fonte em raw/articles/, raw/courses/ ou raw/talks/
-2. /ingest <caminho>           → discute e cria página direto
-3. /assess <conceito>          → verifica entendimento
+2. /wiki-ingest <caminho>        → discute e cria página direto
+3. /wiki-assess <conceito>       → verifica entendimento
 ```
 
 ### No dia a dia
 
 ```
-/crystallize                   → captura aprendizado de qualquer sessão
-/ask "o que é conascência?"    → consulta a wiki com citações
-/lint                          → verifica saúde da wiki
-/progress                      → consulta gaps e progresso
+/wiki-crystallize                → captura aprendizado de qualquer sessão
+/wiki-ask "o que é conascência?" → consulta a wiki com citações
+/wiki-lint                       → verifica saúde da wiki
+/wiki-progress                   → consulta gaps e progresso
+/wiki-roadmap                    → configura ou revisa seu plano de estudos
+/wiki-review                     → resumo da semana (ou /wiki-review month)
 ```
 
 | Skill | O que faz |
@@ -53,6 +67,8 @@ no Hermes. Depois é só usar de qualquer diretório.
 | `wiki-crystallize` | Destila uma sessão em aprendizado consolidado |
 | `wiki-lint` | Verifica frontmatter, wikilinks, órfãs, contradições |
 | `wiki-progress` | Mostra gaps de competência + progresso de leitura |
+| `wiki-roadmap` | Configura o roadmap: perfil, áreas de foco e tópicos de estudo |
+| `wiki-review` | Resumo de estudos: o que estudou, o que revisar, progresso |
 
 ## Estrutura
 
@@ -64,7 +80,7 @@ study-wiki/
 │
 ├── assistant/                # Engenharia do assistente
 │   ├── strategies/           # 21 estratégias reutilizáveis
-│   ├── adapters/hermes/      # 7 skills instaláveis
+│   ├── adapters/hermes/      # 9 skills instaláveis
 │   ├── conventions/          # Frontmatter, wikilinks, idioma, visual
 │   ├── domain/               # Tipos de página, competências, taxonomia
 │   ├── templates/            # Modelos para criar páginas
@@ -87,11 +103,25 @@ study-wiki/
 
 ## Personalizando seus estudos
 
-Cada pessoa define suas áreas de foco em [`assistant/domain/competencies.md`](assistant/domain/competencies.md).
-Edite os slugs e descrições para refletir **sua** stack e objetivos.
-As skills usam esse arquivo para classificar páginas e sugerir gaps de estudo.
+Rode `/wiki-roadmap` para definir seu perfil e áreas de foco.
+O comando guia você por 3 etapas:
 
-**Exemplo (Isabela):** Java, Go, Kotlin, Spring Boot, Kafka, Redis, Kubernetes, com foco em fundamentos de engenharia de software + IA aplicada.
+1. **Perfil e fontes** — nome, cargo, stacks (hard + soft skills),
+   objetivo em 6 meses, e opcionalmente PDI da empresa.
+2. **Curadoria de prioridades** — a LLM busca roadmaps disponíveis
+   no [roadmap.sh](https://roadmap.sh), cruza com suas stacks e interesses,
+   e sugere 3-4 áreas de foco com justificativa explícita baseada em gaps.
+3. **Mapeamento de tópicos** — cada área vira uma lista de tópicos
+   objetivos (do Catálogo em `competencies.md`) com ordem de estudo
+   baseada em dependências.
+
+Depois de configurado, rode `/wiki-roadmap` de novo a qualquer momento para
+adicionar/remover áreas, ajustar prioridades ou trocar roadmaps.
+
+O resultado fica em [`assistant/domain/competencies.md`](assistant/domain/competencies.md) —
+um arquivo vivo que alimenta `/wiki-progress` e `/wiki-assess`.
+
+Você também pode editar o arquivo manualmente — a LLM respeita.
 
 ## Links
 

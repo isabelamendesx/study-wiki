@@ -24,7 +24,7 @@ done
 echo "  ✓ wiki_path → ${WIKI_ROOT}"
 echo ""
 
-SKILLS=(ingest prepare ask assess lint crystallize progress)
+SKILLS=(ingest prepare ask assess lint crystallize progress roadmap review)
 
 install_skill() {
     local name="$1"

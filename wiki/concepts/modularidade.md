@@ -192,7 +192,7 @@ A progressão natural é: use **coesão e acoplamento** para decisões táticas 
 - [[arquitetura-de-software|Arquitetura de Software]] — a 1ª lei (tudo é trade-off) é o fundamento por trás das decisões de modularização.
 - [[conascencia|Conascência]] — a ferramenta mais refinada para medir acoplamento.
 - [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — modularidade é uma métrica estrutural chave; complexidade ciclomática mede a saúde da modularização
-- [[acompanhamento-competencias|Mapa de Estudos]]
+- `assistant/domain/competencies.md`
 
 > [!note] Páginas futuras
 > **Trade-off arquitetural** — a análise de trade-off aparece como tema central aqui. Criar página dedicada quando houver mais material (ex: Cap 4 em diante).

@@ -10,7 +10,7 @@ study-wiki/
 ├── assistant/            ← engenharia do assistente
 │   ├── strategies/       ← 21 estratégias reutilizáveis (tool-agnostic)
 │   ├── adapters/         ← wrappers para cada ferramenta (Hermes, Claude, OpenCode)
-│   │   └── hermes/       ← 7 skills instaláveis no Hermes
+│   │   └── hermes/       ← 9 skills instaláveis no Hermes
 │   ├── domain/           ← modelo de domínio (tipos, competências, taxonomia)
 │   ├── conventions/      ← regras de formatação e estilo
 │   └── templates/        ← modelos para criar páginas
@@ -28,7 +28,9 @@ study-wiki/
 | `wiki-assess` | Autoavaliação: gera perguntas, avalia respostas |
 | `wiki-lint` | Verificação de saúde da wiki (links, frontmatter, órfãs, etc.) |
 | `wiki-crystallize` | Destilar sessão de estudo em aprendizado consolidado |
-| `wiki-progress` | Consultar progresso de leitura e gaps de competência
+| `wiki-progress` | Consultar progresso de leitura e gaps de competência |
+| `wiki-roadmap` | Configurar ou revisar o plano de estudos (roadmap) |
+| `wiki-review` | Resumo de estudos: o que estudou, revisar, progresso |
 
 ## 🎯 Como usar
 
@@ -49,46 +51,68 @@ Depois peça: *"Cria o _index.md pro livro Fundamentos"*.
 
 ### Estudar um capítulo de livro
 
-**`/prepare fundamentos-eng-software cap-5`**
+**`/wiki-prepare fundamentos-eng-software cap-5`**
 
 A LLM extrai o capítulo do EPUB e cria o template com **TL;DR e Resumo preenchidos**. Você completa com insights, citações, dúvidas. Depois:
 
-**`/ingest fundamentos-eng-software cap-5`**
+**`/wiki-ingest fundamentos-eng-software cap-5`**
 
 A LLM lê suas anotações, discute os pontos principais e cria página(s) na wiki.
 
 ### Estudar artigos, cursos, palestras
 
-Coloque a fonte em `raw/articles/`, `raw/courses/` ou `raw/talks/` e chame `/ingest` direto:
+Coloque a fonte em `raw/articles/`, `raw/courses/` ou `raw/talks/` e chame `/wiki-ingest` direto:
 
-**`/ingest raw/articles/artigo-sobre-kafka.md`**
+**`/wiki-ingest raw/articles/artigo-sobre-kafka.md`**
 
-Sem `/prepare` — artigos não precisam de extração de EPUB.
+Sem `/wiki-prepare` — artigos não precisam de extração de EPUB.
 
 ### Verificar seu entendimento
 
-**`/assess arquitetura-de-software`**
+**`/wiki-assess arquitetura-de-software`**
 
 A LLM gera perguntas, você responde, e ela avalia atualizando o campo `understanding`.
 
 ### Ver progresso e gaps
 
-**`/progress`**
+**`/wiki-progress`**
 
 Mostra cobertura por competência, gaps de estudo e progresso de leitura.
 
 ### No dia a dia
 
-**`/crystallize`** — captura aprendizado de qualquer sessão.  
-**`/ask "o que é conascência?"`** — consulta a wiki com citações.  
-**`/lint`** — verifica saúde da wiki.
+**`/wiki-crystallize`** — captura aprendizado de qualquer sessão.
+**`/wiki-ask "o que é conascência?"`** — consulta a wiki com citações.
+**`/wiki-lint`** — verifica saúde da wiki.
+
+### Revisar estudos
+
+**`/wiki-review`** — resumo da semana (padrão)
+**`/wiki-review today`** — o que estudei hoje
+**`/wiki-review month`** — resumo do mês
+
+Mostra: o que estudou no período, conceitos que precisa revisar
+(baseado em tempo desde última visita), e progresso no roadmap.
+
+### Configurar seu plano de estudos
+
+**`/wiki-roadmap`**
+
+A LLM guia você por 3 etapas:
+1. Define seu perfil (cargo, stacks, objetivo) e fontes de referência
+2. Sugere áreas de foco baseadas em dados (roadmap.sh)
+3. Detalha tópicos específicos pra cada área
+
+O resultado é um roadmap em `assistant/domain/competencies.md` que
+alimenta `/wiki-progress` e `/wiki-assess`.
 
 ## Ciclos de uso
 
 ```
-Livro:    EPUB → /prepare → anotar → /ingest → /assess → /progress
-Artigo:   raw/  → /ingest → /assess
-Dia a dia: /crystallize | /ask | /lint | /progress
+Livro:    EPUB → /wiki-prepare → anotar → /wiki-ingest → /wiki-assess → /wiki-progress
+Artigo:   raw/  → /wiki-ingest → /wiki-assess
+Revisão:  /wiki-review → resumo + o que revisar
+Dia a dia: /wiki-crystallize | /wiki-ask | /wiki-lint | /wiki-progress | /wiki-review
 ```
 
 ## Links

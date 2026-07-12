@@ -59,7 +59,7 @@ graph TD
 
 ## Conexões
 
-- [[acompanhamento-competencias|Mapa de Estudos]] — esta página cobre `architecture`, `technical-breadth` e `code-quality`.
+- `assistant/domain/competencies.md` — esta página cobre `architecture`, `technical-breadth` e `code-quality`.
 
 > [!note] Páginas futuras
 > As leis da arquitetura (trade-off e porquê > como) pedem páginas próprias, mas ainda não atingiram o limiar de criação (precisam de mais fontes). Conforme os capítulos seguintes desenvolverem esses temas, a LLM vai sugerir extraí-los.

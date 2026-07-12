@@ -27,4 +27,4 @@ Catálogo de todas as páginas da wiki, organizadas por categoria.
 
 ## Summaries
 
-- [[acompanhamento-competencias|Mapa de Estudos]] — Mapa de áreas de engenharia de software → páginas que cobrem cada área → temas a explorar.
+<!-- LLM: adicionar entradas conforme páginas de summary forem criadas -->

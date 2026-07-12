@@ -121,7 +121,7 @@ A saída é **iteração**: se você consegue mudar a arquitetura com facilidade
 - [[identificacao-caracteristicas-arquiteturais|Identificação de Características Arquiteturais]] — como identificar quais -ilities importam (Cap 5)
 - [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — como medir as -ilities com métricas objetivas (Cap 6)
 - [[fitness-functions|Fitness Functions]] — governança automatizada das características arquiteturais (Cap 6)
-- [[acompanhamento-competencias|Mapa de Estudos]] — cobre `architecture`, `technical-breadth`, `security`, `operation`, `performance`
+- `assistant/domain/competencies.md` — cobre `architecture`, `technical-breadth`, `security`, `operation`, `performance`
 
 > [!note] Páginas futuras
 > **Trade-off arquitetural** — o cap 4 introduz o conceito mas o livro dedica capítulos posteriores a ele. Criar página quando houver mais fontes.

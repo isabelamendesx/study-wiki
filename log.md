@@ -10,13 +10,6 @@ log seja parseável com `grep "^## \[" log.md`.
 
 <!-- LLM: adicionar entradas abaixo conforme a wiki evolui -->
 
-## [2026-07-06] infra | setup: wiki_path automático nos adapters
-
-O script `assistant/setup.sh` agora atualiza automaticamente o campo `wiki_path` nos
-metadados dos arquivos em `assistant/adapters/hermes/*.md` para o path real da wiki
-antes de criar os symlinks. Antes era necessário editar manualmente após clonar em
-outro diretório ou máquina.
-
 ## [2026-07-08] ingestão | Cap 7: Escopo das Características Arquiteturais (reingestão)
 
 Livro: Fundamentos de Engenharia de Software. Reingestão com novo estilo didático (3 atos).
@@ -27,6 +20,12 @@ de conascência: DELETE fire-and-forget. Litmus test domínio vs arquitetura.
 Cobriu `architecture`, `technical-breadth`, `domain-knowledge`, `problem-decomposition`,
 `infrastructure` e `operation`.
 
+## [2026-07-06] infra | setup: wiki_path automático nos adapters
+
+O script `assistant/setup.sh` agora atualiza automaticamente o campo `wiki_path` nos
+metadados dos arquivos em `assistant/adapters/hermes/*.md` para o path real da wiki
+antes de criar os symlinks. Antes era necessário editar manualmente após clonar em
+outro diretório ou máquina.
 ## [2026-06-18] scaffold | Estrutura inicial da wiki de estudos criada
 
 Criada a estrutura de diretórios, SCHEMA.md, README.md, index.md, log.md,
@@ -87,4 +86,18 @@ Netflix Simian Army; metáfora do Checklist Manifesto; estratégia incremental p
 Fecha o arco "características arquiteturais" (caps 4-6). Cobriu `architecture`, `code-quality`,
 `performance`, `data-driven`, `technical-breadth` e `operation`.
 Pela primeira vez `data-driven` tem páginas no mapa de competências.
+
+## [2026-07-12] infra | Refatoração do sistema de competências → roadmap
+
+Substituído o modelo estático por sistema de roadmap com `/wiki-roadmap`.
+`competencies.md` concentra Catálogo + focus_areas. 3 estratégias atualizadas.
+Eliminados: vagas, certificações, tendências, metas trimestrais, PDI.
+Nova skill wiki-roadmap. setup.sh com 9 skills.
+
+## [2026-07-12] infra | Nova skill wiki-review
+
+`/wiki-review` gera resumo do que foi estudado (dia, semana, mês),
+conceitos a revisar (baseado em `updated` do frontmatter) e progresso
+no roadmap. Output salvo em `wiki/summaries/review-YYYY-MM-DD.md`.
+Suporta revisões automáticas via cronjob.
 

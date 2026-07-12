@@ -12,7 +12,7 @@ Validar que todas as páginas da wiki têm frontmatter YAML completo e correto.
 
 ## Passos
 
-1. **Listar todas as páginas** em `wiki/` (exceto `wiki/summaries/acompanhamento-competencias.md` que é gerido separadamente).
+1. **Listar todas as páginas** em `wiki/`.
 2. **Para cada página**, verificar:
    - `title` presente e igual ao H1
    - `created` presente e formato ISO

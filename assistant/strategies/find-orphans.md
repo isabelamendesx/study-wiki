@@ -19,7 +19,7 @@ Encontrar páginas que não recebem wikilinks de entrada de nenhuma outra págin
 
 ## Critérios
 - Páginas com zero wikilinks de entrada são órfãs
-- Exceto `wiki/summaries/acompanhamento-competencias.md` e páginas em `wiki/queries/` que naturalmente têm menos links de entrada
+- Exceto páginas em `wiki/queries/` que naturalmente têm menos links de entrada
 
 ## Saída
 - Lista de páginas órfãs

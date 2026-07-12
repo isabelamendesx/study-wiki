@@ -24,7 +24,7 @@ Ex: `/ingest fundamentos-eng-software cap-5`
 5. **update-graph** — Adicionar wikilinks (pipe syntax, mínimo 2).
 6. **update-book-index** — Atualizar `_index.md` do livro com progresso de leitura.
 7. **update-index** — Atualizar `index.md`.
-8. **update-competency-map** — Atualizar `acompanhamento-competencias.md`.
+8. **update-competency-map** — Atualizar `covered_by` no roadmap.
 9. **update-log** — Registrar a ingestão em `log.md`.
 
 ## Diretrizes de Estilo Didático

@@ -177,7 +177,7 @@ Imagine dois microsserviços: `pedido-service` e `rastreio-service`.
 - [[modularidade|Modularidade]] — coesão e acoplamento são as ferramentas base; a conascência é o refinamento.
 - [[arquitetura-de-software|Arquitetura de Software]] — decisões de arquitetura (hard constraints) frequentemente existem para evitar conascências fortes entre serviços.
 - [[architecture-quantum|Architecture Quantum]] — a conascência síncrona de comunicação é o critério que define os limites de um quantum.
-- [[acompanhamento-competencias|Mapa de Estudos]]
+- `assistant/domain/competencies.md`
 
 > [!note] Páginas futuras
 > **Design de microsserviços** — a conascência entre serviços é um tema que merece página própria quando houver mais fontes (ex: capítulos futuros ou artigos sobre design de APIs).

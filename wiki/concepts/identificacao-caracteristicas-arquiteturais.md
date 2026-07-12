@@ -159,7 +159,7 @@ O exercício mostra como um requisito aparentemente simples ("usuários podem pe
 - [[medicao-caracteristicas-arquiteturais|Medição de Características Arquiteturais]] — como medir as -ilities com métricas objetivas (Cap 6 — passo seguinte)
 - [[fitness-functions|Fitness Functions]] — governança automatizada das características arquiteturais (Cap 6)
 - [[arquitetura-de-software|Arquitetura de Software]] — características arquiteturais são uma das 4 dimensões, e a 1ª Lei (tudo é trade-off) é o fundamento por trás da poda
-- [[acompanhamento-competencias|Mapa de Estudos]] — cobre `architecture`, `product-acumen`, `domain-knowledge`, `technical-communication` e `problem-decomposition`
+- `assistant/domain/competencies.md` — cobre `architecture`, `product-acumen`, `domain-knowledge`, `technical-communication` e `problem-decomposition`
 
 > [!note] Páginas futuras
 > **Análise de trade-offs arquiteturais** — o capítulo 5 introduz o conceito de que não existe "melhor design", apenas a "menos pior coleção de trade-offs". Os capítulos posteriores devem desenvolver isso com mais profundidade. Criar página dedicada quando houver fontes suficientes.
